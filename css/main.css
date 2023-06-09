@@ -1,0 +1,92 @@
+/* Generales*/
+*{
+
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+
+font-family: sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;  
+background-color: lightgray;
+
+}
+/*Principal*/
+
+.principal{
+display: flex;   /*centra verticalmente*/
+max-width: 768px;
+min-width: 350px;
+}
+/*Columna*/
+.columna{
+    color: white;
+    padding: 2rem;
+    width: 25%;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+    cursor: pointer; 
+}
+.columna.activa{
+    padding: 2rem;
+    color: white;
+    width: 50%;
+}
+.sedans{
+
+background-color: hsl(31, 77%, 52%);
+border-radius: 1rem;
+}
+.suvs{
+
+
+    background-color:hsl(184, 100%, 22%) ;
+    border-radius: 1rem;
+}
+
+.luxury{
+
+   background-color:  hsl(179, 100%, 13%);
+   border-radius: 1rem;
+}
+.titulo{
+font-family:'Big Shoulders Display',cursive;
+text-transform: uppercase;
+
+}
+.texto {
+
+    font-size: 14px;
+}
+
+
+.enlace{
+
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    font-size: 12 px;
+
+}
+.sedans .enlace {
+    background-color: hsl(31, 77%, 52%);
+
+}
+.luxury .enlace {
+
+background-color:  hsl(179, 100%, 13%);
+
+}
+.suvs .enlace{
+
+background-color:hsl(184, 100%, 22%) ;
+
+}
